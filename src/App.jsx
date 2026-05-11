@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
+import Cards_wrapper from './components/Cards_wrapper';
 
 const storeUrl = 'https://fakestoreapi.com/products';
 
@@ -24,8 +25,7 @@ function App() {
 
 
   return <>
-    <button className='btn btn-primary'>click</button>
-    <div>{JSON.stringify(productList)}</div>
+    <Cards_wrapper lista={productList}/>
   </>;
 }
 

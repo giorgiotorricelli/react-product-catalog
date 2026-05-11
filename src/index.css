@@ -5,3 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.img-wrapper {
+  height: 30%;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;    /* Fondamentale: deve riempire il wrapper */
+  object-fit: contain; /* Taglia l'immagine per riempire lo spazio senza distorcerla */
+  object-position: center;
+}
+
+.title-wrapper {
+  min-height: 10%;
+}
+
+.price-wrapper {
+  font-size: 1.6rem;
+}
